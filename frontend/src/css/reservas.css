@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reservas {
+
+    width: 1400px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 420px;
+    gap: 40px;
+
+}
+
+/*==========================
+IZQUIERDA
+==========================*/
+
+.left {
+
+    width: 100%;
+
+}
+
+.left h1 {
+
+    font-size: 42px;
+    margin-bottom: 40px;
+
+}
+
+.pantalla {
+
+    width: 650px;
+    height: 22px;
+
+    margin: 0 auto 40px;
+
+    background: linear-gradient(to bottom, #777, #444, #222);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.asientos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.fila {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.letra {
+
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #bdbdbd;
+
+}
+
+.seat {
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #ececec;
+
+    color: #111;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .2s;
+
+}
+
+.seat:hover {
+
+    transform: scale(1.08);
+
+}
+
+.selected {
+
+    background: #e50914;
+    color: white;
+
+}
+
+.ocupado {
+
+    background: #444;
+    color: #777;
+    cursor: not-allowed;
+
+}
+
+/*==========================
+DERECHA
+==========================*/
+
+.right {
+
+    background: #181818;
+
+    padding: 35px;
+
+    border-left: 1px solid #2d2d2d;
+
+    min-height: 850px;
+
+    position: sticky;
+    top: 20px;
+
+}
+
+.right h2 {
+
+    font-size: 42px;
+
+    margin-top: 0;
+    margin-bottom: 35px;
+
+}
+
+.info {
+
+    margin-bottom: 35px;
+
+    border-bottom: 1px solid #333;
+
+    padding-bottom: 25px;
+
+}
+
+.info h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+
+}
+
+.info p {
+
+    margin: 6px 0;
+
+    color: #cfcfcf;
+
+}
+
+.total {
+
+    margin-top: 40px;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+.confirmar {
+
+    width: 100%;
+
+    height: 60px;
+
+    margin-top: 25px;
+
+    background: #e50914;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.confirmar:hover {
+
+    background: #ff1e28;
+
+}
+
+
+
+.leyenda {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+}
+
+.item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 15px;
+
+}
+
+.caja {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 4px;
+
+}
+
+.disponible {
+
+    background: #ececec;
+
+}
+
+.seleccionado {
+
+    background: #e50914;
+
+}
+
+.no-disponible {
+
+    background: #444;
+
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    width: 420px;
+    background: #1b1b1b;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2a2a2a;
+    color: white;
+    box-sizing: border-box;
+}
+
+.fila-pago {
+    display: flex;
+    gap: 10px;
+}
+
+.botones-modal {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cancelar-btn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagar-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagar-btn:hover {
+    background: #c40812;
+}

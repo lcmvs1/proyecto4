@@ -1,0 +1,30 @@
+.navbar{
+    height:80px;
+    background:#111;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    border-bottom:1px solid #2d2d2d;
+}
+
+.logo{
+    color:#e50914;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.navbar ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.navbar li{
+    cursor:pointer;
+    font-size:18px;
+}

@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+}
+
+.register-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.register-form{
+
+    width:430px;
+
+    height:100vh;
+
+    background:#161313;
+
+    padding:55px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.register-form h1{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+
+}
+
+.register-form input{
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2a2525;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.register-form input::placeholder{
+
+    color:#bfbfbf;
+
+}
+
+.register-form button{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-top:10px;
+
+    transition:.25s;
+
+}
+
+.register-form button:first-of-type{
+
+    background:#e50914;
+
+    color:white;
+
+}
+
+.register-form button:first-of-type:hover{
+
+    background:#c4000d;
+
+}
+
+.register-form button:last-of-type{
+
+    background:white;
+
+    color:black;
+
+}
